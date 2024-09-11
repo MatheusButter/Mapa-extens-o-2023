@@ -1,0 +1,312 @@
+<html lang = "pt - BR">
+<head>
+	<meta charset = "UTF - 8">
+	<meta name = "viwpoer" content= "width=device-width, initial-scale=1.0">
+	<title>Mapa</title>
+	<!-- Importando o CSS -->
+	
+	<link rel="stylesheet" href="leaflet.css">
+	
+	
+	<!-- Importando o JS, ele tá aqui pq a doc manda por aqui não no body-->
+	
+	<script src="leaflet.js"></script>
+	
+	<style>
+		#map{
+			height: 800px;
+		}
+	</style>
+	
+</head>
+<body>
+	<div id="map"></div>
+	<script>
+		var map = L.map('map').setView([-19.83906, -40.618479], 8);
+		
+		L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		maxZoom: 19,
+		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+		}).addTo(map);
+		
+		<!-- Criando o pin Reitoria -->
+		
+		var marker = L.marker([-20.307276, -40.302643]).addTo(map);
+		
+		
+		<!-- Criando o popup Reitoria -->
+		var popup = L.popup();
+		
+		marker.bindPopup("<b>IFES Reitoria</b><br>6 Ações de extensão cadastrados em 2023.<br>198 Alunos contemplados.").openPopup();
+		
+		
+		<!-- Criando o pin Campus Vitória -->
+		
+		var marker = L.marker([-20.311125, -40.318636]).addTo(map);
+		
+		
+		<!-- Criando o popup Campus Vitória -->
+		var popup = L.popup();
+		
+		marker.bindPopup("<b>IFES Campus Vitória</b><br>42 Ações de extensão cadastrados em 2023.<br>2.996 Alunos contemplados.").openPopup();
+		
+		
+		<!-- Criando o pin CEFOR -->
+		
+		var marker = L.marker([-20.308262, -40.320248]).addTo(map);
+		
+		
+		<!-- Criando o popup CEFOR -->
+		var popup = L.popup();
+		
+		marker.bindPopup("<b>IFES Centro de Referência em Formação e em Educação a Distância</b><br>7 Ações de extensão cadastrados em 2023.<br>239 Alunos contemplados.").openPopup();
+		
+		
+		<!-- Criando o pin Campus Serra -->
+		
+		var marker = L.marker([-20.197612, -40.217353]).addTo(map);
+		
+		
+		<!-- Criando o popup Campus Serra -->
+		var popup = L.popup();
+		
+		marker.bindPopup("<b>IFES Campus Serra</b><br>8 Ações de extensão cadastrados em 2023.<br>1.225 Alunos contemplados.").openPopup();
+		
+		
+		<!-- Criando o pin Campus Via Velha -->
+		
+		var marker = L.marker([-20.34861, -40.308549]).addTo(map);
+		
+		
+		<!-- Criando o popup Campus Via Velha -->
+		var popup = L.popup();
+		
+		marker.bindPopup("<b>IFES Campus Via Velha</b><br>13 Ações de extensão cadastrados em 2023.<br>1.493 Alunos contemplados.").openPopup();
+		
+		
+		<!-- Criando o pin Campus Cariacica -->
+		
+		var marker = L.marker([-20.324069, -40.371613]).addTo(map);
+		
+		
+		<!-- Criando o popup Campus Cariacica -->
+		var popup = L.popup();
+		
+		marker.bindPopup("<b>IFES Campus Cariacica</b><br>8 Ações de extensão cadastrados em 2023.<br>149 Alunos contemplados.").openPopup();
+		
+		
+		
+		<!-- Criando o pin Campus Alegre -->
+		
+		var marker = L.marker([-20.760867, -41.457022]).addTo(map);
+		
+		
+		<!-- Criando o popup Campus Alegre -->
+		var popup = L.popup();
+		
+		marker.bindPopup("<b>IFES Campus Alegre</b><br>15 Ações de extensão cadastrados em 2023.<br>628 Alunos contemplados.").openPopup();
+		
+		
+		<!-- Criando o pin Campus Aracruz -->
+		
+		var marker = L.marker([-19.824204, -40.262995]).addTo(map);
+		
+		
+		<!-- Criando o popup Campus Aracruz -->
+		var popup = L.popup();
+		
+		marker.bindPopup("<b>IFES Campus Aracruz</b><br>11 Ações de extensão cadastrados em 2023.<br>382 Alunos contemplados.").openPopup();
+		
+		
+		<!-- Criando o pin Campus Barra de São Francisco -->
+		
+		var marker = L.marker([-18.698875, -40.889344]).addTo(map);
+		
+		
+		<!-- Criando o popup Campus Barra de São Francisco -->
+		var popup = L.popup();
+		
+		marker.bindPopup("<b>IFES Campus Barra de São Francisco</b><br>2 Ações de extensão cadastrados em 2023.<br>568 Alunos contemplados.").openPopup();
+		
+		
+		
+		<!-- Criando o pin Campus Barra de Cachoeiro de Itapemirim -->
+		
+		var marker = L.marker([-20.802567, -41.154453]).addTo(map);
+		
+		
+		<!-- Criando o popup Campus Barra de Cachoeiro de Itapemirim -->
+		var popup = L.popup();
+		
+		marker.bindPopup("<b>IFES Campus Cachoeiro de Itapemirim</b><br>27 Ações de extensão cadastrados em 2023.<br>1.997 Alunos contemplados.").openPopup();
+		
+		
+		<!-- Criando o pin Campu Santa Maria de Jetibá -->
+		
+		var marker = L.marker([-20.025701, -40.744206]).addTo(map);
+		
+		
+		<!-- Criando o popup Campus Santa Maria de Jetibá -->
+		var popup = L.popup();
+		
+		marker.bindPopup("<b>IFES Campus Santa Maria de Jetibá</b><br>14 Ações de extensão cadastrados em 2023.<br>126 Alunos contemplados.").openPopup();
+		
+		
+		<!-- Criando o pin Campus Campus Colatina -->
+		
+		var marker = L.marker([-19.520241, -40.614102]).addTo(map);
+		
+		
+		<!-- Criando o popup Campus Campus Colatina -->
+		var popup = L.popup();
+		
+		marker.bindPopup("<b>IFES  Campus Colatina</b><br>20 Ações de extensão cadastrados em 2023.<br>3.396 Alunos contemplados.").openPopup();
+		
+		
+		<!-- Criando o pin Campus Campus Ibatiba -->
+		
+		var marker = L.marker([-20.236268, -41.507753]).addTo(map);
+		
+		
+		<!-- Criando o popup Campus Campus Ibatiba -->
+		var popup = L.popup();
+		
+		marker.bindPopup("<b>IFES  Campus Ibatiba</b><br>9 Ações de extensão cadastrados em 2023.<br>948 Alunos contemplados.").openPopup();
+		
+		
+		
+		<!-- Criando o pin Campus Campus Itapina -->
+		
+		var marker = L.marker([-19.496693, -40.757776]).addTo(map);
+		
+		
+		<!-- Criando o popup Campus Campus Itapina -->
+		var popup = L.popup();
+		
+		marker.bindPopup("<b>IFES  Campus Itapina</b><br>8 Ações de extensão cadastrados em 2023.<br>804 Alunos contemplados.").openPopup();
+		
+		
+		
+				
+		<!-- Criando o pin Campus Campus Linhares -->
+		
+		var marker = L.marker([-19.408013, -40.043816]).addTo(map);
+		
+		
+		<!-- Criando o popup Campus Campus Linhares -->
+		var popup = L.popup();
+		
+		marker.bindPopup("<b>IFES  Campus Linhares</b><br>13 Ações de extensão cadastrados em 2023.<br>1.172 Alunos contemplados.").openPopup();
+		
+		
+		<!-- Criando o pin Campus  Montanha -->
+		
+		var marker = L.marker([-18.129539, -40.350403]).addTo(map);
+		
+		
+		<!-- Criando o popup Campus Campus Montanha -->
+		var popup = L.popup();
+		
+		marker.bindPopup("<b>IFES  Campus Montanha</b><br>18 Ações de extensão cadastrados em 2023.<br>759 Alunos contemplados.").openPopup();
+		
+		
+		<!-- Criando o pin Campus Campus Nova Venécia -->
+		
+		var marker = L.marker([-18.713712, -40.376818]).addTo(map);
+		
+		
+		<!-- Criando o popup Campus Campus Nova Venécia -->
+		var popup = L.popup();
+		
+		marker.bindPopup("<b>IFES  Campus Nova Venécia</b><br>20 Ações de extensão cadastrados em 2023.<br>2755 Alunos contemplados.").openPopup();
+		
+		
+		
+		<!-- Criando o pin  Campus Piuma -->
+		
+		var marker = L.marker([-20.840524, -40.724508]).addTo(map);
+		
+		
+		<!-- Criando o popup  Campus Piuma -->
+		var popup = L.popup();
+		
+		marker.bindPopup("<b>IFES  Campus Piuma</b><br>7 Ações de extensão cadastrados em 2023.<br>232 Alunos contemplados.").openPopup();
+		
+		
+		<!-- Criando o pin  Campus Santa Tereza -->
+		
+		var marker = L.marker([-19.804138, -40.678813]).addTo(map);
+		
+		
+		<!-- Criando o popup  Campus Santa Tereza -->
+		var popup = L.popup();
+		
+		marker.bindPopup("<b>IFES  Campus Santa Tereza</b><br>10 Ações de extensão cadastrados em 2023.<br>221 Alunos contemplados.").openPopup();
+		
+		
+		
+		<!-- Criando o pin  Campus São Mateus -->
+		
+		var marker = L.marker([-18.678711, -39.861662]).addTo(map);
+		
+		
+		<!-- Criando o popup  Campus São Mateus -->
+		var popup = L.popup();
+		
+		marker.bindPopup("<b>IFES  Campus São Mateus</b><br>9 Ações de extensão cadastrados em 2023.<br>563 Alunos contemplados.").openPopup();
+		
+		
+		<!-- Criando o pin  Campus Venda Nova do Imigrante -->
+		
+		var marker = L.marker([-20.326499, -41.127343]).addTo(map);
+		
+		
+		<!-- Criando o popup  Campus Venda Nova do Imigrante -->
+		var popup = L.popup();
+		
+		marker.bindPopup("<b>IFES  Campus Venda Nova do Imigrante</b><br>22 Ações de extensão cadastrados em 2023.<br>2.289 Alunos contemplados.").openPopup();
+		
+		
+		<!-- Criando o pin  Campus Viana -->
+		
+		var marker = L.marker([-20.364021, -40.44399]).addTo(map);
+		
+		
+		<!-- Criando o popup  Campus Viana -->
+		var popup = L.popup();
+		
+		marker.bindPopup("<b>IFES  Campus Viana</b><br>4 Ações de extensão cadastrados em 2023.<br>61 Alunos contemplados.").openPopup();
+		
+		
+		
+		
+		<!-- Criando o pin  Presidente Kennedy -->
+		
+		var marker = L.marker([-21.189684, -40.931604]).addTo(map);
+		
+		
+		<!-- Criando o popup  Presidente Kennedy -->
+		var popup = L.popup();
+		
+		marker.bindPopup("<b>IFES  Campus Presidente Kennedy </b><br>1 Ações de extensão cadastrados em 2023.<br>73 Alunos contemplados.").openPopup();
+		
+		
+		
+		<!-- Função usada no desenvolvimento para obter a latitude e longitude dos locais -->	
+		function onMapClick(e) {
+			popup
+				.setLatLng(e.latlng)
+				.setContent("You clicked the map at " + e.latlng.toString())
+				.openOn(map);
+		}
+		
+		
+		
+		
+
+		map.on('click', onMapClick);
+	</script>
+	
+	
+</body>
+</html>
